@@ -1,6 +1,5 @@
 \documentclass[10pt,conference]{IEEEtran}
 
-% Including necessary packages
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{array}
@@ -10,90 +9,100 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 
-% Setting up the document
+\numberwithin{table}{section}
+
 \begin{document}
 
-% Starting document layout
+\title{Fórmulario de Teoría Electromagnética}
+\author{\IEEEauthorblockN{Melendez Bustamante Luis Fernando}\IEEEauthorblockA{Instituto Politécnico Nacional}}
+\maketitle
 
-% Defining table for static electric fields
-\section*{Campos Eléctricos Estáticos}
+\section{Campos Eléctricos Estáticos}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
             \hline
-            Ley de Coulomb                  & $F = k_e \dfrac{|q_1 q_2|}{r^2}$                          \\
+            \multicolumn{2}{|c|}{\textbf{Campos Eléctricos Estáticos}}                                                               \\
             \hline
-            Constante de Coulomb            & $k_e = \dfrac{1}{4 \pi \epsilon_0}$                       \\
+            Ley de Coulomb                  & $F = k_e \dfrac{|q_1 q_2|}{r^2}$                                                       \\
             \hline
-            Campo eléctrico (punto)         & $\vec{E} = k_e \dfrac{q}{r^2} \hat{e}_r$                  \\
+            Constante de Coulomb            & $k_e = \dfrac{1}{4 \pi \epsilon_0}$                                                    \\
             \hline
-            Campo eléctrico (línea)         & $\vec{E} = \dfrac{\lambda}{2 \pi \epsilon_0 r} \hat{e}_r$ \\
+            Campo eléctrico (punto)         & $\vec{E} = k_e \dfrac{q}{r^2} \hat{e}_r$                                               \\
             \hline
-            Campo eléctrico (plano)         & $\vec{E} = \dfrac{\sigma}{2 \epsilon_0} \hat{e}_n$        \\
+            Campo eléctrico (línea)         & $\vec{E} = \dfrac{\lambda}{2 \pi \epsilon_0 r} \hat{e}_r$                              \\
             \hline
-            Potencial eléctrico (general)   & $V = -\int \vec{E} \cdot d\vec{l}'$                       \\
+            Campo eléctrico (plano)         & $\vec{E} = \dfrac{\sigma}{2 \epsilon_0} \hat{e}_n$                                     \\
             \hline
-            Potencial eléctrico (punto)     & $V = k_e \dfrac{q}{r}$                                    \\
+            Potencial eléctrico (general)   & $V = -\int \vec{E} \cdot d\vec{l}'$                                                    \\
             \hline
-            Trabajo eléctrico               & $W = q \Delta V$                                          \\
+            Potencial eléctrico (punto)     & $V = k_e \dfrac{q}{r}$                                                                 \\
             \hline
-            Energía potencial               & $U = \dfrac{q_1 q_2}{4 \pi \epsilon_0 r}$                 \\
+            Trabajo eléctrico               & $W = q \Delta V$                                                                       \\
             \hline
-            Capacitancia (general)          & $C = \dfrac{Q}{V}$                                        \\
+            Energía potencial               & $U = \dfrac{q_1 q_2}{4 \pi \epsilon_0 r}$                                              \\
             \hline
-            Capacitancia (placas paralelas) & $C = \epsilon \dfrac{A}{d}$                               \\
+            Capacitancia (general)          & $C = \dfrac{Q}{V}$                                                                     \\
             \hline
-            Capacitancia (coaxial)          & $C = \dfrac{2 \pi \epsilon l}{\ln(b/a)}$                  \\
+            Capacitancia (placas paralelas) & $C = \epsilon \dfrac{A}{d}$                                                            \\
             \hline
-            Capacitancia (esférica)         & $C = 4 \pi \epsilon a$                                    \\
+            Capacitancia (coaxial)          & $C = \dfrac{2 \pi \epsilon l}{\ln(b/a)}$                                               \\
+            \hline
+            Capacitancia (esférica)         & $C = 4 \pi \epsilon a$                                                                 \\
+            \hline
+            Densidad de energía eléctrica   & $W_e = \dfrac{1}{2} \epsilon E^2$                                                      \\
+            \hline
+            Dipolo eléctrico (campo)        & $\vec{E} = \dfrac{1}{4 \pi \epsilon_0} \dfrac{p (3 \cos^2 \theta - 1)}{r^3} \hat{e}_r$ \\
             \hline
         \end{tabular}
     }
     \caption{Fórmulas de campos eléctricos estáticos}
 \end{table}
 
-% Defining table for Gauss's laws
-\section*{Leyes de Gauss}
+\section{Leyes de Gauss}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Leyes de Gauss}}                                                   \\
+            \multicolumn{2}{|c|}{\textbf{Leyes de Gauss}}                                                        \\
             \hline
-            Diferencial (eléctrico)  & $\nabla \cdot \vec{D} = \rho_v$                                      \\
+            Diferencial (eléctrico)       & $\nabla \cdot \vec{D} = \rho_v$                                      \\
             \hline
-            Integral (eléctrico)     & $\oint \vec{D} \cdot d\vec{S}' = Q_{\text{enc}}$                     \\
+            Integral (eléctrico)          & $\oint \vec{D} \cdot d\vec{S}' = Q_{\text{enc}}$                     \\
             \hline
-            Diferencial (magnético)  & $\nabla \cdot \vec{B} = 0$                                           \\
+            Diferencial (magnético)       & $\nabla \cdot \vec{B} = 0$                                           \\
             \hline
-            Integral (magnético)     & $\oint \vec{B} \cdot d\vec{S}' = 0$                                  \\
+            Integral (magnético)          & $\oint \vec{B} \cdot d\vec{S}' = 0$                                  \\
             \hline
-            Ley de Gauss (eléctrico) & $\oint \vec{E} \cdot d\vec{S}' = \dfrac{Q_{\text{enc}}}{\epsilon_0}$ \\
+            Ley de Gauss (eléctrico)      & $\oint \vec{E} \cdot d\vec{S}' = \dfrac{Q_{\text{enc}}}{\epsilon_0}$ \\
             \hline
-            Condición frontera (E)   & $\epsilon_1 E_{1n} - \epsilon_2 E_{2n} = \rho_s$                     \\
+            Condición frontera (E)        & $\epsilon_1 E_{1n} - \epsilon_2 E_{2n} = \rho_s$                     \\
             \hline
-            Condición frontera (D)   & $E_{1t} = E_{2t}$                                                    \\
+            Condición frontera (D)        & $E_{1t} = E_{2t}$                                                    \\
             \hline
-            Esfera (carga puntual)   & $\vec{E} = \dfrac{q}{4 \pi \epsilon_0 r^2} \hat{e}_r$                \\
+            Esfera (carga puntual)        & $\vec{E} = \dfrac{q}{4 \pi \epsilon_0 r^2} \hat{e}_r$                \\
             \hline
-            Cilindro (línea carga)   & $\vec{E} = \dfrac{\lambda}{2 \pi \epsilon_0 r} \hat{e}_r$            \\
+            Cilindro (línea carga)        & $\vec{E} = \dfrac{\lambda}{2 \pi \epsilon_0 r} \hat{e}_r$            \\
+            \hline
+            Potencial (esfera conductora) & $V = \dfrac{q}{4 \pi \epsilon_0 r} \ (r \geq R)$                     \\
             \hline
         \end{tabular}
     }
     \caption{Fórmulas de las leyes de Gauss}
 \end{table}
 
-% Defining table for static magnetic fields
-\section*{Campos Magnéticos Estáticos}
+\section{Campos Magnéticos Estáticos}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{\textbf{Campos Magnéticos Estáticos}}                                  \\
             \hline
             Ley Biot-Savart             & $d\vec{H} = \dfrac{I d\vec{l}' \times \hat{e}_r}{4 \pi r'^2}$ \\
             \hline
@@ -115,18 +124,23 @@
             \hline
             Campo magnético (toroide)   & $\vec{H} = \dfrac{N I}{2 \pi r} \hat{e}_\phi$                 \\
             \hline
+            Momento magnético (espira)  & $\vec{m} = I \vec{A}$                                         \\
+            \hline
+            Campo (espira circular)     & $\vec{B} = \dfrac{\mu_0 I}{2 R} \hat{e}_z$                    \\
+            \hline
         \end{tabular}
     }
     \caption{Fórmulas de campos magnéticos estáticos}
 \end{table}
 
-% Defining table for electromagnetic waves - Part 1
-\section*{Ondas Electromagnéticas - Parte 1}
+\section{Ondas Electromagnéticas - Parte 1}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{\textbf{Ondas Electromagnéticas}}                                                                         \\
             \hline
             Velocidad propagación     & $v = \dfrac{1}{\sqrt{\mu \epsilon}}$                                                               \\
             \hline
@@ -145,38 +159,44 @@
     \caption{Fórmulas básicas de ondas electromagnéticas}
 \end{table}
 
-% Defining table for electromagnetic waves - Part 2
-\section*{Ondas Electromagnéticas - Parte 2}
+\section{Ondas Electromagnéticas - Parte 2}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
             \hline
-            Atenuación (conductores) & $\alpha = \omega \sqrt{\dfrac{\mu \epsilon}{2} \left( \sqrt{1 + \left( \dfrac{\sigma}{\omega \epsilon} \right)^2} - 1 \right)}$ \\
+            \multicolumn{2}{|c|}{\textbf{Ondas Electromagnéticas Avanzadas}}                                                                                             \\
             \hline
-            Potencia promedio        & $P_{\text{avg}} = \dfrac{1}{2} \text{Re}(\vec{E} \times \vec{H}^*)$                                                             \\
+            Atenuación (conductores)   & $\alpha = \omega \sqrt{\dfrac{\mu \epsilon}{2} \left( \sqrt{1 + \left( \dfrac{\sigma}{\omega \epsilon} \right)^2} - 1 \right)}$ \\
             \hline
-            Constante propagación    & $\gamma = \alpha + j\beta$                                                                                                      \\
+            Potencia promedio          & $P_{\text{avg}} = \dfrac{1}{2} \text{Re}(\vec{E} \times \vec{H}^*)$                                                             \\
             \hline
-            Constante de fase        & $\beta = \omega \sqrt{\dfrac{\mu \epsilon}{2} \left( \sqrt{1 + \left( \dfrac{\sigma}{\omega \epsilon} \right)^2} + 1 \right)}$  \\
+            Constante propagación      & $\gamma = \alpha + j\beta$                                                                                                      \\
             \hline
-            Reactancia inductiva     & $X_L = \omega L$                                                                                                                \\
+            Constante de fase          & $\beta = \omega \sqrt{\dfrac{\mu \epsilon}{2} \left( \sqrt{1 + \left( \dfrac{\sigma}{\omega \epsilon} \right)^2} + 1 \right)}$  \\
             \hline
-            Reactancia capacitiva    & $X_C = \dfrac{1}{\omega C}$                                                                                                     \\
+            Profundidad de penetración & $\delta = \sqrt{\dfrac{2}{\omega \mu \sigma}}$                                                                                  \\
+            \hline
+            Índice de refracción       & $n = \sqrt{\epsilon_r \mu_r}$                                                                                                   \\
+            \hline
+            Reactancia inductiva       & $X_L = \omega L$                                                                                                                \\
+            \hline
+            Reactancia capacitiva      & $X_C = \dfrac{1}{\omega C}$                                                                                                     \\
             \hline
         \end{tabular}
     }
     \caption{Fórmulas avanzadas de ondas electromagnéticas}
 \end{table}
 
-% Defining table for Maxwell's equations
-\section*{Leyes de Maxwell}
+\section{Leyes de Maxwell}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
-    \resizebox{0.8\textwidth}{!}{
+    \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{\textbf{Leyes de Maxwell}}                                                                 \\
             \hline
             Ley de Gauss (eléctrico)     & $\nabla \cdot \vec{D} = \rho_v$                                                  \\
             \hline
@@ -197,13 +217,14 @@
     \caption{Fórmulas de las leyes de Maxwell}
 \end{table}
 
-% Defining table for magnetostatics and transformers
-\section*{Magnetostática y Transformadores}
+\section{Magnetostática y Transformadores}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
-    \resizebox{0.68\textwidth}{!}{
+    \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{\textbf{Magnetostática y Transformadores}}                 \\
             \hline
             Reluctancia                             & $\Re = \dfrac{l}{\mu A}$              \\
             \hline
@@ -223,18 +244,23 @@
             \hline
             Fem inducida (transformador)            & $V_2 = M \dfrac{dI_1}{dt}$            \\
             \hline
+            Energía almacenada (inductor)           & $W_m = \dfrac{1}{2} L I^2$            \\
+            \hline
+            Relación de corrientes (transformador)  & $\dfrac{I_2}{I_1} = \dfrac{N_1}{N_2}$ \\
+            \hline
         \end{tabular}
     }
     \caption{Fórmulas de magnetostática y transformadores}
 \end{table}
 
-% Defining table for relations and constants
-\section*{Relaciones y Constantes}
+\section{Relaciones y Constantes}
 \begin{table}[H]
     \centering
     \renewcommand{\arraystretch}{1.2}
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
+            \hline
+            \multicolumn{2}{|c|}{\textbf{Relaciones y Constantes}}                                                 \\
             \hline
             Permitividad del vacío  & $\epsilon_0 = 8.854 \times 10^{-12} \, \text{F/m}$                           \\
             \hline
@@ -248,6 +274,8 @@
             \hline
             Permitividad compleja   & $\epsilon_c = \epsilon - j \dfrac{\sigma}{\omega}$                           \\
             \hline
+            Impedancia del vacío    & $\eta_0 = \sqrt{\dfrac{\mu_0}{\epsilon_0}} \approx 376.73 \, \Omega$         \\
+            \hline
         \end{tabular}
     }
     \caption{Relaciones y constantes fundamentales}
@@ -256,9 +284,7 @@
 % Force a new page for the glossary
 \clearpage
 
-% Defining glossary as a list
-\section*{Glosario}
-
+\section{Glosario}
 \begin{itemize}[leftmargin=1.5cm]
     \item[$\alpha$] Coeficiente de atenuación
     \item[$\beta$] Constante de fase
