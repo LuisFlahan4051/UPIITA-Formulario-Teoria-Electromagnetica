@@ -1,5 +1,6 @@
 \documentclass[10pt,conference]{IEEEtran}
 
+% Including necessary packages
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{array}
@@ -9,14 +10,17 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 
+% Number tables by section
 \numberwithin{table}{section}
 
+% Setting up the document
 \begin{document}
 
 \title{Fórmulario de Teoría Electromagnética}
 \author{\IEEEauthorblockN{Melendez Bustamante Luis Fernando}\IEEEauthorblockA{Instituto Politécnico Nacional}}
 \maketitle
 
+% Campos Eléctricos Estáticos
 \section{Campos Eléctricos Estáticos}
 \begin{table}[H]
     \centering
@@ -24,43 +28,48 @@
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Campos Eléctricos Estáticos}}                                                               \\
+            \multicolumn{2}{|c|}{\textbf{Campos Eléctricos Estáticos}}                                                                             \\
             \hline
-            Ley de Coulomb                  & $F = k_e \dfrac{|q_1 q_2|}{r^2}$                                                       \\
+            Ley de Coulomb                  & $F = k_e \dfrac{|q_1 q_2|}{r^2}$                                                                     \\
             \hline
-            Constante de Coulomb            & $k_e = \dfrac{1}{4 \pi \epsilon_0}$                                                    \\
+            Constante de Coulomb            & $k_e = \dfrac{1}{4 \pi \epsilon_0}$                                                                  \\
             \hline
-            Campo eléctrico (punto)         & $\vec{E} = k_e \dfrac{q}{r^2} \hat{e}_r$                                               \\
+            Campo eléctrico (punto)         & $\vec{E} = k_e \dfrac{q}{r^2} \hat{e}_r$                                                             \\
             \hline
-            Campo eléctrico (línea)         & $\vec{E} = \dfrac{\lambda}{2 \pi \epsilon_0 r} \hat{e}_r$                              \\
+            Campo eléctrico (línea)         & $\vec{E} = \dfrac{\lambda}{2 \pi \epsilon_0 r} \hat{e}_r$                                            \\
             \hline
-            Campo eléctrico (plano)         & $\vec{E} = \dfrac{\sigma}{2 \epsilon_0} \hat{e}_n$                                     \\
+            Campo eléctrico (plano)         & $\vec{E} = \dfrac{\sigma}{2 \epsilon_0} \hat{e}_n$                                                   \\
             \hline
-            Potencial eléctrico (general)   & $V = -\int \vec{E} \cdot d\vec{l}'$                                                    \\
+            Potencial eléctrico (general)   & $V = -\int \vec{E} \cdot d\vec{l}'$                                                                  \\
             \hline
-            Potencial eléctrico (punto)     & $V = k_e \dfrac{q}{r}$                                                                 \\
+            Potencial eléctrico (punto)     & $V = k_e \dfrac{q}{r}$                                                                               \\
             \hline
-            Trabajo eléctrico               & $W = q \Delta V$                                                                       \\
+            Trabajo eléctrico               & $W = q \Delta V$                                                                                     \\
             \hline
-            Energía potencial               & $U = \dfrac{q_1 q_2}{4 \pi \epsilon_0 r}$                                              \\
+            Energía potencial               & $U = \dfrac{q_1 q_2}{4 \pi \epsilon_0 r}$                                                            \\
             \hline
-            Capacitancia (general)          & $C = \dfrac{Q}{V}$                                                                     \\
+            Capacitancia (general)          & $C = \dfrac{Q}{V}$                                                                                   \\
             \hline
-            Capacitancia (placas paralelas) & $C = \epsilon \dfrac{A}{d}$                                                            \\
+            Capacitancia (placas paralelas) & $C = \epsilon \dfrac{A}{d}$                                                                          \\
             \hline
-            Capacitancia (coaxial)          & $C = \dfrac{2 \pi \epsilon l}{\ln(b/a)}$                                               \\
+            Capacitancia (coaxial)          & $C = \dfrac{2 \pi \epsilon l}{\ln(b/a)}$                                                             \\
             \hline
-            Capacitancia (esférica)         & $C = 4 \pi \epsilon a$                                                                 \\
+            Capacitancia (esférica)         & $C = 4 \pi \epsilon a$                                                                               \\
             \hline
-            Densidad de energía eléctrica   & $W_e = \dfrac{1}{2} \epsilon E^2$                                                      \\
+            Densidad de energía eléctrica   & $W_e = \dfrac{1}{2} \epsilon E^2$                                                                    \\
             \hline
-            Dipolo eléctrico (campo)        & $\vec{E} = \dfrac{1}{4 \pi \epsilon_0} \dfrac{p (3 \cos^2 \theta - 1)}{r^3} \hat{e}_r$ \\
+            Dipolo eléctrico (campo)        & $\vec{E} = \dfrac{1}{4 \pi \epsilon_0} \dfrac{p (3 \cos^2 \theta - 1)}{r^3} \hat{e}_r$               \\
+            \hline
+            Fuerza de Lorentz (completa)    & $\vec{F} = q \vec{E} + q \vec{v} \times \vec{B}$                                                     \\
+            \hline
+            Potencial dipolo eléctrico      & $V = \dfrac{1}{4 \pi \epsilon_0} \dfrac{\vec{p} \cdot (\vec{r} - \vec{r}')}{|\vec{r} - \vec{r}'|^3}$ \\
             \hline
         \end{tabular}
     }
     \caption{Fórmulas de campos eléctricos estáticos}
 \end{table}
 
+% Leyes de Gauss
 \section{Leyes de Gauss}
 \begin{table}[H]
     \centering
@@ -95,6 +104,7 @@
     \caption{Fórmulas de las leyes de Gauss}
 \end{table}
 
+% Campos Magnéticos Estáticos
 \section{Campos Magnéticos Estáticos}
 \begin{table}[H]
     \centering
@@ -102,37 +112,42 @@
     \resizebox{0.48\textwidth}{!}{
         \begin{tabular}{|c|c|}
             \hline
-            \multicolumn{2}{|c|}{\textbf{Campos Magnéticos Estáticos}}                                  \\
+            \multicolumn{2}{|c|}{\textbf{Campos Magnéticos Estáticos}}                                                                  \\
             \hline
-            Ley Biot-Savart             & $d\vec{H} = \dfrac{I d\vec{l}' \times \hat{e}_r}{4 \pi r'^2}$ \\
+            Ley Biot-Savart             & $d\vec{H} = \dfrac{I d\vec{l}' \times \hat{e}_r}{4 \pi r'^2}$                                 \\
             \hline
-            Campo magnético (alambre)   & $\vec{H} = \dfrac{I}{2 \pi r} \hat{e}_\phi$                   \\
+            Campo magnético (alambre)   & $\vec{H} = \dfrac{I}{2 \pi r} \hat{e}_\phi$                                                   \\
             \hline
-            Fuerza magnética (alambre)  & $d\vec{F} = I d\vec{l}' \times \vec{B}$                       \\
+            Fuerza magnética (alambre)  & $d\vec{F} = I d\vec{l}' \times \vec{B}$                                                       \\
             \hline
-            Ley de Ampère (integral)    & $\oint \vec{H} \cdot d\vec{l}' = I_{\text{enc}}$              \\
+            Ley de Ampère (integral)    & $\oint \vec{H} \cdot d\vec{l}' = I_{\text{enc}}$                                              \\
             \hline
-            Ley de Ampère (diferencial) & $\nabla \times \vec{H} = \vec{J}$                             \\
+            Ley de Ampère (diferencial) & $\nabla \times \vec{H} = \vec{J}$                                                             \\
             \hline
-            Condición frontera (B)      & $B_{1n} = B_{2n}$                                             \\
+            Condición frontera (B)      & $B_{1n} = B_{2n}$                                                                             \\
             \hline
-            Condición frontera (H)      & $\vec{H}_{1t} - \vec{H}_{2t} = \vec{K}$                       \\
+            Condición frontera (H)      & $\vec{H}_{1t} - \vec{H}_{2t} = \vec{K}$                                                       \\
             \hline
-            Fuerza de Lorentz           & $\vec{F} = q \vec{v} \times \vec{B}$                          \\
+            Fuerza de Lorentz           & $\vec{F} = q \vec{v} \times \vec{B}$                                                          \\
             \hline
-            Campo magnético (solenoide) & $\vec{H} = \dfrac{N I}{l} \hat{e}_z$                          \\
+            Campo magnético (solenoide) & $\vec{H} = \dfrac{N I}{l} \hat{e}_z$                                                          \\
             \hline
-            Campo magnético (toroide)   & $\vec{H} = \dfrac{N I}{2 \pi r} \hat{e}_\phi$                 \\
+            Campo magnético (toroide)   & $\vec{H} = \dfrac{N I}{2 \pi r} \hat{e}_\phi$                                                 \\
             \hline
-            Momento magnético (espira)  & $\vec{m} = I \vec{A}$                                         \\
+            Momento magnético (espira)  & $\vec{m} = I \vec{A}$                                                                         \\
             \hline
-            Campo (espira circular)     & $\vec{B} = \dfrac{\mu_0 I}{2 R} \hat{e}_z$                    \\
+            Campo (espira circular)     & $\vec{B} = \dfrac{\mu_0 I}{2 R} \hat{e}_z$                                                    \\
+            \hline
+            Par dipolo magnético        & $\vec{\tau} = \vec{m} \times \vec{B}$                                                         \\
+            \hline
+            Campo dipolo magnético      & $\vec{B} = \dfrac{\mu_0 m}{4 \pi r^3} (2 \cos \theta \hat{e}_r + \sin \theta \hat{e}_\theta)$ \\
             \hline
         \end{tabular}
     }
     \caption{Fórmulas de campos magnéticos estáticos}
 \end{table}
 
+% Ondas Electromagnéticas - Parte 1
 \section{Ondas Electromagnéticas - Parte 1}
 \begin{table}[H]
     \centering
@@ -159,6 +174,7 @@
     \caption{Fórmulas básicas de ondas electromagnéticas}
 \end{table}
 
+% Ondas Electromagnéticas - Parte 2
 \section{Ondas Electromagnéticas - Parte 2}
 \begin{table}[H]
     \centering
@@ -189,6 +205,7 @@
     \caption{Fórmulas avanzadas de ondas electromagnéticas}
 \end{table}
 
+% Leyes de Maxwell
 \section{Leyes de Maxwell}
 \begin{table}[H]
     \centering
@@ -217,6 +234,7 @@
     \caption{Fórmulas de las leyes de Maxwell}
 \end{table}
 
+% Magnetostática y Transformadores
 \section{Magnetostática y Transformadores}
 \begin{table}[H]
     \centering
@@ -253,6 +271,7 @@
     \caption{Fórmulas de magnetostática y transformadores}
 \end{table}
 
+% Relaciones y Constantes
 \section{Relaciones y Constantes}
 \begin{table}[H]
     \centering
@@ -270,6 +289,10 @@
             \hline
             Relación D y E          & $\vec{D} = \epsilon \vec{E}$                                                 \\
             \hline
+            Relación D, E y P       & $\vec{D} = \epsilon_0 \vec{E} + \vec{P}$                                     \\
+            \hline
+            Vector de polarización  & $\vec{P} = \epsilon_0 \chi_e \vec{E}$                                        \\
+            \hline
             Relación B y H          & $\vec{B} = \mu \vec{H}$                                                      \\
             \hline
             Permitividad compleja   & $\epsilon_c = \epsilon - j \dfrac{\sigma}{\omega}$                           \\
@@ -284,6 +307,7 @@
 % Force a new page for the glossary
 \clearpage
 
+% Glosario
 \section{Glosario}
 \begin{itemize}[leftmargin=1.5cm]
     \item[$\alpha$] Coeficiente de atenuación
@@ -293,6 +317,7 @@
     \item[$\epsilon$] Permitividad del medio
     \item[$\epsilon_0$] Permitividad del vacío
     \item[$\epsilon_r$] Constante dieléctrica relativa
+    \item[$\chi_e$] Susceptibilidad eléctrica
     \item[$\eta$] Impedancia intrínseca
     \item[$F$] Fuerza eléctrica
     \item[$\vec{E}$] Campo eléctrico
@@ -305,10 +330,12 @@
     \item[$\lambda$] Densidad de carga lineal
     \item[$L$] Inductancia
     \item[$M$] Inductancia mutua
+    \item[$\vec{m}$] Momento magnético
     \item[$\mu$] Permeabilidad del medio
     \item[$\mu_0$] Permeabilidad del vacío
     \item[$\mu_r$] Permeabilidad relativa
     \item[$\nu$] Frecuencia
+    \item[$\vec{P}$] Vector de polarización
     \item[$\Phi$] Flujo magnético
     \item[$\Re$] Reluctancia
     \item[$\rho_v$] Densidad de carga volumétrica
@@ -317,6 +344,7 @@
     \item[$q$] Carga eléctrica
     \item[$r$] Distancia radial
     \item[$\sigma$] Conductividad eléctrica
+    \item[$\vec{\tau}$] Par (torque)
     \item[$v$] Velocidad de propagación
     \item[$V$] Potencial eléctrico
     \item[$\mathcal{E}$] Fuerza electromotriz
@@ -330,6 +358,7 @@
     \item[$k_e, k_h$] Constantes de pérdidas
     \item[$l$] Longitud
     \item[$N$] Número de espiras
+    \item[$p$] Momento dipolar eléctrico
     \item[$P$] Potencia
     \item[$t$] Espesor
     \item[$Z$] Impedancia
